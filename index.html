@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Jinx Club Fantasy Premier League</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121e30;--line:#26364c;--gold:#f5c542;--muted:#9eacc0;--green:#49d49a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#1a2b42 0,#0b1220 48%);color:#f7f9fc;font:15px/1.5 Inter,system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}.hero{border:1px solid var(--line);border-radius:22px;padding:28px;background:linear-gradient(125deg,#18283d,#101827 65%);position:relative;overflow:hidden}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.18em;font-size:12px}.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.05;margin:10px 0}.hero p{color:var(--muted);margin:8px 0 0}.live{display:inline-flex;align-items:center;gap:8px;color:#baf5dc;background:#12372e;border:1px solid #24634f;padding:6px 10px;border-radius:30px;font-size:12px;font-weight:800}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.stat,.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}.stat small{color:var(--muted);display:block}.stat strong{font-size:26px;display:block;margin-top:4px}.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:22px 0 12px}.toolbar h2{margin:0;font-size:20px}.muted{color:var(--muted)}button{background:#263b56;color:white;border:1px solid #3b5472;padding:9px 13px;border-radius:10px;cursor:pointer;font-weight:700}button:hover{border-color:var(--gold)}.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:620px}.table th{text-align:right;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:12px;border-bottom:1px solid var(--line)}.table th:nth-child(2),.table td:nth-child(2){text-align:left}.table td{text-align:right;padding:13px 12px;border-bottom:1px solid #202f43}.table tr:last-child td{border:0}.rank{color:var(--gold);font-weight:900;width:48px}.team{font-weight:800}.manager{font-size:12px;color:var(--muted)}.up{color:var(--green)}.down{color:#ff8585}.empty{text-align:center;padding:30px;color:var(--muted)}.foot{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}.error{color:#ffb3b3}.tabs{display:flex;gap:8px}.tab{font-size:13px}.tab.active{background:var(--gold);color:#121827;border-color:var(--gold)}
+@media(max-width:600px){.wrap{padding:14px 10px 40px}.hero{padding:22px 18px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:21px}.stat small{font-size:11px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="hero">
+  <div class="kicker">JINX CLUB PRESENTS</div><h1>FANTASY PREMIER LEAGUE</h1>
+  <p id="season">Season 2026/27 · Classic Mini-League</p>
+  <div style="margin-top:18px"><span class="live"><i class="dot"></i> AUTO-UPDATED LEAGUE</span></div>
+</header>
+<section class="stats">
+ <div class="stat"><small>Current Gameweek</small><strong id="gw">—</strong></div>
+ <div class="stat"><small>Managers</small><strong id="count">—</strong></div>
+ <div class="stat"><small>League Leader</small><strong id="leader" style="font-size:17px">—</strong></div>
+</section>
+<div class="toolbar"><h2 id="leagueName">Mini-League Standings</h2><button id="refresh">↻ Refresh data</button></div>
+<div class="panel">
+ <div class="tabs" style="margin-bottom:12px"><button class="tab active" data-view="overall">Overall</button><button class="tab" data-view="gameweek">Latest Gameweek</button></div>
+ <div class="table-wrap"><table class="table"><thead><tr><th>Rank</th><th>Manager / Team</th><th id="pointsHead">Total points</th><th>GW points</th><th>Rank change</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Loading league data…</td></tr></tbody></table></div>
+ <div id="status" class="foot">Fetching latest published standings…</div>
+</div>
+<div class="foot">Data from the Fantasy Premier League public API · League ID 1978<br>Unofficial fan-made website. Not affiliated with the Premier League or FPL.</div>
+</main>
+<script>
+const DATA_URL='./data.json'; let payload=null,view='overall';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function rankChange(r){const n=(r.last_rank||0)-(r.rank||0);return n>0?`<span class="up">▲ ${n}</span>`:n<0?`<span class="down">▼ ${Math.abs(n)}</span>`:'—'}
+function render(){
+ if(!payload) return;
+ const s=payload.standings||[];document.getElementById('leagueName').textContent=payload.league_name||'Mini-League Standings';
+ document.getElementById('gw').textContent=payload.gameweek?`GW ${payload.gameweek}`:'—';
+ document.getElementById('count').textContent=s.length;
+ document.getElementById('leader').textContent=s[0]?.entry_name||'—';
+ document.getElementById('pointsHead').textContent=view==='overall'?'Total points':'Gameweek points';
+ const sorted=[...s].sort((a,b)=>view==='overall'?a.rank-b.rank:(b.event_total-a.event_total)||a.rank-b.rank);
+ document.getElementById('rows').innerHTML=sorted.map((r,i)=>`<tr><td class="rank">${view==='overall'?r.rank:i+1}</td><td><div class="team">${esc(r.entry_name)}</div><div class="manager">${esc(r.player_name)}</div></td><td><b>${view==='overall'?r.total:r.event_total}</b></td><td>${r.event_total}</td><td>${rankChange(r)}</td></tr>`).join('')||'<tr><td colspan="5" class="empty">No managers found.</td></tr>';
+ document.getElementById('status').textContent=`Last data refresh: ${payload.updated_at||'unknown'} · ${payload.source||'FPL public API'}`;
+}
+async function load(){
+ const status=document.getElementById('status');status.textContent='Refreshing…';
+ try{const res=await fetch(DATA_URL+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error('Could not load data.json');payload=await res.json();render();}
+ catch(e){status.innerHTML=`<span class="error">${esc(e.message)}. The scheduled update may not have run yet.</span>`;document.getElementById('rows').innerHTML='<tr><td colspan="5" class="empty">No cached standings available. Please try again later.</td></tr>'}
+}
+document.getElementById('refresh').addEventListener('click',load);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render()}));
+load();
+</script></body></html>
