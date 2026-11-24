@@ -3,7 +3,7 @@
   "league_name": "Champions League 7.0",
   "gameweek": 11,
   "gameweek_name": "Gameweek 11",
-  "updated_at": "2026-11-23 19:34 UTC",
+  "updated_at": "2026-11-24 12:25 UTC",
   "source": "Fantasy Premier League public API",
   "standings": [
     {
@@ -43,12 +43,12 @@
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/7236543/1a8c65e0-ce70-4965-be0e-0757cbadc975.png",
       "entry": 7236543,
       "entry_name": "Force One",
-      "event_total": 36,
+      "event_total": 38,
       "last_rank": 4,
       "player_name": "Sohong Chakraborty",
       "rank": 4,
       "rank_sort": 4,
-      "total": 726
+      "total": 728
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/10604/c7614023-71a4-4501-81e1-0450943c6aad.png",
@@ -62,37 +62,37 @@
       "total": 724
     },
     {
+      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/833911/4fef5ea2-95fd-48f4-adf4-0f5a7348181b.png",
+      "entry": 1070561,
+      "entry_name": "MoJack FC",
+      "event_total": 48,
+      "last_rank": 11,
+      "player_name": "Ankur Bhattacharya",
+      "rank": 6,
+      "rank_sort": 6,
+      "total": 720
+    },
+    {
+      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/2608717/cc9f1581-0bda-4a0b-899a-bdda9336cac4.png",
+      "entry": 2608717,
+      "entry_name": "Forever Diogo!",
+      "event_total": 42,
+      "last_rank": 9,
+      "player_name": "Agnibho Majumder",
+      "rank": 7,
+      "rank_sort": 7,
+      "total": 718
+    },
+    {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/514876/e7bfcdc4-738b-46e5-b97f-91526a3253d4.png",
       "entry": 514876,
       "entry_name": "Ginga Galácticos",
       "event_total": 28,
       "last_rank": 5,
       "player_name": "Anik Majumder",
-      "rank": 6,
-      "rank_sort": 6,
-      "total": 718
-    },
-    {
-      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/833911/4fef5ea2-95fd-48f4-adf4-0f5a7348181b.png",
-      "entry": 1070561,
-      "entry_name": "MoJack FC",
-      "event_total": 46,
-      "last_rank": 11,
-      "player_name": "Ankur Bhattacharya",
-      "rank": 7,
-      "rank_sort": 7,
-      "total": 718
-    },
-    {
-      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/2608717/cc9f1581-0bda-4a0b-899a-bdda9336cac4.png",
-      "entry": 2608717,
-      "entry_name": "Forever Diogo!",
-      "event_total": 40,
-      "last_rank": 9,
-      "player_name": "Agnibho Majumder",
       "rank": 8,
       "rank_sort": 8,
-      "total": 716
+      "total": 718
     },
     {
       "club_badge_src": null,
@@ -216,26 +216,48 @@
       "total": 677
     },
     {
+      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/377454/e73f2bae-3a01-471e-a5b8-20dcea6c9b80.png",
+      "entry": 377454,
+      "entry_name": "Dalot of Nothing",
+      "event_total": 26,
+      "last_rank": 18,
+      "player_name": "Sayan Sarkar",
+      "rank": 20,
+      "rank_sort": 20,
+      "total": 677
+    },
+    {
       "club_badge_src": null,
       "entry": 1457441,
       "entry_name": "AlonShow",
       "event_total": 40,
       "last_rank": 22,
       "player_name": "Aniket Mitra",
-      "rank": 20,
-      "rank_sort": 20,
+      "rank": 21,
+      "rank_sort": 21,
       "total": 677
     },
     {
-      "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/377454/e73f2bae-3a01-471e-a5b8-20dcea6c9b80.png",
-      "entry": 377454,
-      "entry_name": "Dalot of Nothing",
-      "event_total": 25,
-      "last_rank": 18,
-      "player_name": "Sayan Sarkar",
-      "rank": 21,
-      "rank_sort": 21,
-      "total": 676
+      "club_badge_src": null,
+      "entry": 4834872,
+      "entry_name": "Freeloaders দ্বিতীয়",
+      "event_total": 40,
+      "last_rank": 23,
+      "player_name": "Subhadeep Das",
+      "rank": 22,
+      "rank_sort": 22,
+      "total": 677
+    },
+    {
+      "club_badge_src": null,
+      "entry": 1468001,
+      "entry_name": "Flavella FC",
+      "event_total": 28,
+      "last_rank": 19,
+      "player_name": "Abhinil Mondal",
+      "rank": 23,
+      "rank_sort": 23,
+      "total": 677
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/7677345/406cc112-81cd-468c-86d8-266e1afd05c0.png",
@@ -244,19 +266,8 @@
       "event_total": 42,
       "last_rank": 26,
       "player_name": "Arijit Pal",
-      "rank": 22,
-      "rank_sort": 22,
-      "total": 675
-    },
-    {
-      "club_badge_src": null,
-      "entry": 1468001,
-      "entry_name": "Flavella FC",
-      "event_total": 26,
-      "last_rank": 19,
-      "player_name": "Abhinil Mondal",
-      "rank": 23,
-      "rank_sort": 23,
+      "rank": 24,
+      "rank_sort": 24,
       "total": 675
     },
     {
@@ -266,17 +277,6 @@
       "event_total": 40,
       "last_rank": 25,
       "player_name": "Rahul Sarkar",
-      "rank": 24,
-      "rank_sort": 24,
-      "total": 674
-    },
-    {
-      "club_badge_src": null,
-      "entry": 4834872,
-      "entry_name": "Freeloaders দ্বিতীয়",
-      "event_total": 37,
-      "last_rank": 23,
-      "player_name": "Subhadeep Das",
       "rank": 25,
       "rank_sort": 25,
       "total": 674
@@ -304,26 +304,26 @@
       "total": 667
     },
     {
+      "club_badge_src": null,
+      "entry": 33147,
+      "entry_name": "Fc Palme(i)r(as)",
+      "event_total": 29,
+      "last_rank": 24,
+      "player_name": "Saibal Santra",
+      "rank": 28,
+      "rank_sort": 28,
+      "total": 664
+    },
+    {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/149433/e75b85c8-d90a-44ea-960e-d9ad9e3099e1.png",
       "entry": 149433,
       "entry_name": "Deathstroke FC",
       "event_total": 40,
       "last_rank": 28,
       "player_name": "Souvik Sengupta",
-      "rank": 28,
-      "rank_sort": 28,
-      "total": 663
-    },
-    {
-      "club_badge_src": null,
-      "entry": 33147,
-      "entry_name": "Fc Palme(i)r(as)",
-      "event_total": 27,
-      "last_rank": 24,
-      "player_name": "Saibal Santra",
       "rank": 29,
       "rank_sort": 29,
-      "total": 662
+      "total": 663
     },
     {
       "club_badge_src": null,
@@ -351,12 +351,12 @@
       "club_badge_src": null,
       "entry": 1771595,
       "entry_name": "Red Ballerz",
-      "event_total": 31,
+      "event_total": 33,
       "last_rank": 31,
       "player_name": "Rounak Sarkar",
       "rank": 32,
       "rank_sort": 32,
-      "total": 646
+      "total": 648
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/512129/096d8bb1-a42b-4f0c-bbfc-3a256020d0ca.png",
@@ -373,12 +373,23 @@
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/24604/9ca1de64-6f2d-4006-9afb-0b3bc4aa2a83.png",
       "entry": 1505790,
       "entry_name": "eLevenOnTheRun",
-      "event_total": 30,
+      "event_total": 34,
       "last_rank": 33,
       "player_name": "Adrik Banerjee",
       "rank": 34,
       "rank_sort": 34,
-      "total": 638
+      "total": 642
+    },
+    {
+      "club_badge_src": null,
+      "entry": 4048700,
+      "entry_name": "Soumak11",
+      "event_total": 34,
+      "last_rank": 35,
+      "player_name": "Soumak Tapadar",
+      "rank": 35,
+      "rank_sort": 35,
+      "total": 639
     },
     {
       "club_badge_src": null,
@@ -387,31 +398,42 @@
       "event_total": 46,
       "last_rank": 39,
       "player_name": "Uday Chandak",
-      "rank": 35,
-      "rank_sort": 35,
+      "rank": 36,
+      "rank_sort": 36,
       "total": 638
     },
     {
       "club_badge_src": null,
-      "entry": 4048700,
-      "entry_name": "Soumak11",
-      "event_total": 32,
-      "last_rank": 35,
-      "player_name": "Soumak Tapadar",
-      "rank": 36,
-      "rank_sort": 36,
-      "total": 637
+      "entry": 4862379,
+      "entry_name": "MkSwingAC",
+      "event_total": 39,
+      "last_rank": 37,
+      "player_name": "Abir Chowdhury",
+      "rank": 37,
+      "rank_sort": 37,
+      "total": 631
     },
     {
       "club_badge_src": null,
       "entry": 3268695,
       "entry_name": "Man I Love Fernandes",
-      "event_total": 23,
+      "event_total": 25,
       "last_rank": 35,
       "player_name": "Nilanta Roy",
-      "rank": 37,
-      "rank_sort": 37,
-      "total": 628
+      "rank": 38,
+      "rank_sort": 38,
+      "total": 630
+    },
+    {
+      "club_badge_src": null,
+      "entry": 404489,
+      "entry_name": "Chicken Filet Mateta",
+      "event_total": 48,
+      "last_rank": 41,
+      "player_name": "Sayan Mazumder",
+      "rank": 39,
+      "rank_sort": 39,
+      "total": 627
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/1452841/a09416cd-828a-443a-a9d3-bc10e9d39926.png",
@@ -420,31 +442,20 @@
       "event_total": 35,
       "last_rank": 38,
       "player_name": "anirban bhattacharjee",
-      "rank": 38,
-      "rank_sort": 38,
+      "rank": 40,
+      "rank_sort": 40,
       "total": 627
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/1140541/a32f01f5-2352-4944-bf45-ccec02b59b52.png",
       "entry": 1994074,
       "entry_name": "Baléba United",
-      "event_total": 36,
+      "event_total": 37,
       "last_rank": 40,
       "player_name": "Nirjhar Samanta",
-      "rank": 39,
-      "rank_sort": 39,
-      "total": 625
-    },
-    {
-      "club_badge_src": null,
-      "entry": 4862379,
-      "entry_name": "MkSwingAC",
-      "event_total": 33,
-      "last_rank": 37,
-      "player_name": "Abir Chowdhury",
-      "rank": 40,
-      "rank_sort": 40,
-      "total": 625
+      "rank": 41,
+      "rank_sort": 41,
+      "total": 626
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/6547253/b6f495e7-7786-4454-8a99-dd8730c80324.png",
@@ -453,20 +464,9 @@
       "event_total": 46,
       "last_rank": 42,
       "player_name": "Sayantan Mitra",
-      "rank": 41,
-      "rank_sort": 41,
-      "total": 622
-    },
-    {
-      "club_badge_src": null,
-      "entry": 404489,
-      "entry_name": "Chicken Filet Mateta",
-      "event_total": 42,
-      "last_rank": 41,
-      "player_name": "Sayan Mazumder",
       "rank": 42,
       "rank_sort": 42,
-      "total": 621
+      "total": 622
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/5077734/fc210f70-1290-48ec-93a0-770cfbab073b.png",
@@ -483,34 +483,34 @@
       "club_badge_src": null,
       "entry": 1033039,
       "entry_name": "WitcherXI",
-      "event_total": 30,
+      "event_total": 32,
       "last_rank": 44,
       "player_name": "Rajarshi Pyne",
       "rank": 44,
       "rank_sort": 44,
-      "total": 574
+      "total": 576
     },
     {
       "club_badge_src": "https://fantasy.premierleague.com/gcs/plfpl-production-adobe-approved/plfpl-production/16256/6fe93974-3982-4185-93c3-298618e813cf.png",
       "entry": 16256,
       "entry_name": "Biswas Rakho Rohan",
-      "event_total": 37,
+      "event_total": 38,
       "last_rank": 45,
       "player_name": "Rohan Biswas",
       "rank": 45,
       "rank_sort": 45,
-      "total": 554
+      "total": 555
     },
     {
       "club_badge_src": null,
       "entry": 8205568,
       "entry_name": "Faltu Team",
-      "event_total": 14,
+      "event_total": 21,
       "last_rank": 46,
       "player_name": "Somraj Ganguly",
       "rank": 46,
       "rank_sort": 46,
-      "total": 454
+      "total": 461
     }
   ]
 }
